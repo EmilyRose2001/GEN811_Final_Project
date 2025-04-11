@@ -1,3 +1,8 @@
 # GEN811_Final_Project
 
-testing read me
+# By:
+Emily Persson
+# Background
+# Methods
+# Results
+# References
