@@ -1,8 +1,8 @@
-## GEN811_Final_Project: Bacterial Genome Assembly
+# GEN811_Final_Project: Bacterial Genome Assembly
 
-# By:
+### By:
 Emily Persson
-# Background
-# Methods
-# Results
-# References
+## Background
+## Methods
+## Results
+## References
