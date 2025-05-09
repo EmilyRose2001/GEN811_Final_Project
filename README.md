@@ -27,11 +27,15 @@ A tool that will be used further down the pipeline is Blobtools. This tool requi
 #### BWA mem
 BWA mem is a read mapping tool that aligns the short sequences of the forward and reverse reads to a reference genome. The input includes the reference genome FASTA file, the forward read FASTQ, and the reverse read FASTQ. The reference genome for this project is the 'contigs.fasta' file. The output is a SAM file. This file contains information on how and where the sequences map to the reference genome.
 #### SAMtools
-
+SAMtools is used to convert a SAM file to a BAM file, where a BAM file is the binary version of a SAM file. The input for the conversion is the SAM file created by BWQ mem, and the output is a BAM version of that file.
 #### Bedtools
+This tool is used to perform genomic arithmetic and analysis. It is used in this project to calculate the per-base coverage of the assembly. The input for this is the BAM file created by SAMtools, and the output is a file named 'coverage.out'.
+#### 'gen_input_table.py'
+This Python script is used to calculate per-contig coverage. The input for this script is the 'contigs.fasta' file and the 'coverage.out' file created by Bedtools. The output is a file named 'coverage_table.tsv', which is a table with two columns. These columns are the contig header and the average coverage.
 #### BlobTools
-#### awk
+Blobtools is a genome assembly visualization tool that provides insights into what information should be filtered out of the assembly. The input consists of the 'contigs.fasta' file, the BAM file, and the output file 'contigs.fasta.vs.nt.cul5.1e5.megablast.out' from BLAST. The output is a JSON file, which is used to create a taxonomy table and a plot. These outputs are then used to filter the genome assembly.
 #### filter_contigs_by_list.py
+This Python script, created by Joseph Seivgny, is designed to filter the assembly based on a list of contigs that have been chosen to remain in the assembly. The input is the 'contigs.fasta' file, the TXT file of the list of contigs, and a desired output name for a FASTA file. The output is the filtered genome assembly.
 ## Results
 fastqc quality before and after trimming
 blobtools identification
