@@ -6,7 +6,7 @@ The data used in this project are forward and reverse sequences from two differe
 ## Methods
 The sequences from the two unidentified bacterial organisms were provided by Kaleb Ducharme, a TA at the University of New Hampshire. Using the university's supercomputer RON and multiple tools, the genomes were assembled.
 ### Tools
-### FastQC
+#### FastQC
 this tool does cool things
 ### Trimmomatic
 ### SPAdes
