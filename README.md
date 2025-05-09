@@ -4,17 +4,24 @@
 ## Background
 The data used in this project are forward and reverse sequences from two different unidentified bacterial organisms. In total, two forward and two reverse sequences were used. The project aims to identify the two organisms by assembling their genomes from these forward and reverse sequences. 
 ## Methods
-The sequences from the two unidentified bacterial organisms were provided by Kaleb Ducharme, a TA at the University of New Hampshire. Using the university's supercomputer RON and multiple tools, the genomes were assembled.
+The sequences from the two unidentified bacterial organisms were provided by Kaleb Ducharme, a TA at the University of New Hampshire. They were sequenced using Sanger sequencing and Illumina. Using the university's supercomputer RON and multiple tools, the genomes were assembled.
 ### Tools
 #### FastQC
-this tool does cool things
+The purpose of using FastQC was to take a look at the read quality of the sequences. FastQC outputs an HTML and zip file for each sequence it is given. There are multiple read quality components in a FastQC HTML file; basic statistics, per base sequence quality, per tile sequence quality, per sequence quality scores, per base sequence content, per sequence GC content, per base N content, sequence length distribution, sequence duplication levels, overrepresented sequences, and adapter content. This HTML file was downloaded from RON to examine the FastQC findings.
 #### Trimmomatic
+Trimmomatic is a tool that removes low-quality reads and adapter content from the sequence. A wrapper script for trimmomatic, created by Joseph Sevigny, was used in this project. The script takes two arguments: the forward read and the reverse read. The output is a directory called 'trimmed-reads' containing trimmed forward, reverse, unpaired forward, and unpaired reverse gzipped reads. FastQC is then performed on the trimmed reads to compare the quality results to the raw reads.
 #### SPAdes
+SPAdes is a genome assembly tool that is great with most bacterial genomes. SPAdes takes four input files: the trimmed forward, reverse, unpaired forward, and unpaired reverse reads. The output is a directory containing several files. The only files that are important for this assembly are the 'contigs.fasta' and 'spades.log' files. All files except for the ones mentioned were removed from the output spade directory.
 #### QUAST
+Quast is used to assess the assembly created by SPAdes. It assesses the assembly by taking a look at the quality of the assembly. QUAST only takes one argument, and it is the 'contigs.fasta' file produced by SPAdes. The output of this tool is another directory containing several files. Most of the output files are the same, just in a different format. A list of formats includes txt, gff, csv...
 #### BUSCO
+BUSCO is used to determine how complete the assembled genome is. BUSCO takes the same input as QUAST, which is the 'contigs.fasta' output file from SPAdes. The output is also similar to QUAST, where there is an output directory containing several files. Two of the main output files are the 'short_summary_busco_output.txt' and the 'full_table_busco_output.tsv'. 
 #### PROKKA
-#### Extract_Sequence
+PROKKA is a tool used to annotate genomes. The input is also the same as QUAST and BUSCO, which is the 'contigs.fasta' file. The output is also similar, where there is an output directory containing various annotation files. These files include a GFF file for gene annotations, a FFN FASTA file that was used for the annotation, and an FAA FASTA file that was used for the annotation. Using the output GFF file, a count for each gene annotation was also created.
+#### 'extract_sequence'
+This tool extracts sequences from a PROKKA FFN file based on a specified sequence header. The input is a string representing the sequence header to search for and a PROKKA FFN file to search in. This tool was used to extract the '16S ribosomal RNA' sequences from the output PROKKA FFN file, which were used to identify the mystery organisms.
 #### BLAST
+
 #### blast-ncbi-nt.sh
 #### BWA mem
 #### SAMtools
