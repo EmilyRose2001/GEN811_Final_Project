@@ -21,8 +21,9 @@ PROKKA is a tool used to annotate genomes. The input is also the same as QUAST a
 #### 'extract_sequence'
 This tool extracts sequences from a PROKKA FFN file based on a specified sequence header. The input is a string representing the sequence header to search for and a PROKKA FFN file to search in. This tool was used to extract the '16S ribosomal RNA' sequences from the output PROKKA FFN file, which were used to identify the mystery organisms.
 #### BLAST
-
+BLAST is an alignment tool that aligns a sequence to a reference sequence. BLAST was used multiple times in this project: BLAST the extracted 16S sequences against a custom database created from the 'contigs.fasta' file, BLAST the whole assembly ('contigs.fasta') against the nucleotide database, and BLAST the filtered assembly against the UniVec database. The purpose of BLASTing the 16S sequences is to compare the taxonomic identification to the output of the whole assembly BLAST. To create the 'contigs.fasta' database, the input is the 'contigs.fasta' file, and what database type being created. For this project, a nucleotide database was created, so the input was 'nucl'. The output is multiple 'contigs_db' files. To run blastn on the 16S sequence FASTA file, the input is the FASTA file and the created database. The output is a TSV file. The purpose of BLASTing the whole assembly is to identify which taxonomy each sequence belongs to. The purpose of the UniVec BLAST is to check for contamination. The input is the filtered assembly FASTA, and the output is a file 'genome_vs_univec.6'.
 #### blast-ncbi-nt.sh
+A tool that will be used further down the pipeline is Blobtools. This tool requires a specific input BLAST file format. To make this easier, a BLAST script created by Joseph Sveigny was used to BLAST the whole assembly against the nucleotide database. This script takes one argument, which is the 'contigs.fasta' file, and outputs a file named 'contigs.fasta.vs.nt.cul5.1e5.megablast.out'. 
 #### BWA mem
 #### SAMtools
 #### Bedtools
