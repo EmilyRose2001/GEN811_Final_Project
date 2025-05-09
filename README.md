@@ -25,7 +25,9 @@ BLAST is an alignment tool that aligns a sequence to a reference sequence. BLAST
 #### blast-ncbi-nt.sh
 A tool that will be used further down the pipeline is Blobtools. This tool requires a specific input BLAST file format. To make this easier, a BLAST script created by Joseph Sveigny was used to BLAST the whole assembly against the nucleotide database. This script takes one argument, which is the 'contigs.fasta' file, and outputs a file named 'contigs.fasta.vs.nt.cul5.1e5.megablast.out'. 
 #### BWA mem
+BWA mem is a read mapping tool that aligns the short sequences of the forward and reverse reads to a reference genome. The input includes the reference genome FASTA file, the forward read FASTQ, and the reverse read FASTQ. The reference genome for this project is the 'contigs.fasta' file. The output is a SAM file. This file contains information on how and where the sequences map to the reference genome.
 #### SAMtools
+
 #### Bedtools
 #### BlobTools
 #### awk
