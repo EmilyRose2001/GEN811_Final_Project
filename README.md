@@ -8,20 +8,20 @@ The sequences from the two unidentified bacterial organisms were provided by Kal
 ### Tools
 #### FastQC
 this tool does cool things
-### Trimmomatic
-### SPAdes
-### QUAST
-### BUSCO
-### PROKKA
-### Extract_Sequence
-### BLAST
-### blast-ncbi-nt.sh
-### BWA mem
-### SAMtools
-### Bedtools
-### BlobTools
-### awk
-### filter_contigs_by_list.py
+#### Trimmomatic
+#### SPAdes
+#### QUAST
+#### BUSCO
+#### PROKKA
+#### Extract_Sequence
+#### BLAST
+#### blast-ncbi-nt.sh
+#### BWA mem
+#### SAMtools
+#### Bedtools
+#### BlobTools
+#### awk
+#### filter_contigs_by_list.py
 ## Results
 fastqc quality before and after trimming
 blobtools identification
