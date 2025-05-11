@@ -39,6 +39,7 @@ This Python script, created by Joseph Seivgny, is designed to filter the assembl
 ## Results
 ![02_fastqc](sample_02_fastqc.png)
 #### Figure 1
+Several plots from a FastQC file.
 ![03_fastqc](sample_03_fastqc.png)
 #### Figure 2
 ![02_sample_blob](blob_out_02_S65_L001.blobDB.json.bestsum.genus.p8.span.100.blobplot.bam0.png)
