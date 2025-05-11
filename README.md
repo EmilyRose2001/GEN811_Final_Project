@@ -37,12 +37,11 @@ Blobtools is a genome assembly visualization tool that provides insights into wh
 #### filter_contigs_by_list.py
 This Python script, created by Joseph Seivgny, is designed to filter the assembly based on a list of contigs that have been chosen to remain in the assembly. The input is the 'contigs.fasta' file, the TXT file of the list of contigs, and a desired output name for a FASTA file. The output is the filtered genome assembly.
 ## Results
-fastqc quality before and after trimming
-blobtools identification
+
 ![02_sample_blob](blob_out_02_S65_L001.blobDB.json.bestsum.genus.p8.span.100.blobplot.bam0.png)
 #### Figure 1
-A blobtools plot depicting the greatest taxonomic hits for the unidentified sample 02_S65_L001. As seen by the centralized blue dot, the taxonomy with the highest hit is Clostridioides. This plot was created using Blobtools with the output JSON mentioned in the methods section for Blobtools.
+A blobtools plot depicting the greatest taxonomic hits for the unidentified sample 02_S65_L001. As seen by the centralized blue dot, the taxonomy with the highest hit is Clostridioides. The smaller blue dots further down the plot represent contigs that we want to filter out. This plot was created using Blobtools with the output JSON mentioned in the methods section for Blobtools.
 ![03_sample_blob](blob_out_03_S58_L001.blobDB.json.bestsum.genus.p8.span.100.blobplot.bam0.png)
 #### Figure 2
-Another blobtools plot showing the greatest taxonomic hits for the other unidentified sample, 03_S58_L001. The taxonomy of this sample is Escherichia.
+Another blobtools plot showing the greatest taxonomic hits for the other unidentified sample, 03_S58_L001. The taxonomy of this sample is Escherichia. The smaller colorful dots further down the plot represent other taxonomic hits that we want to remove by filtering the genome.
 ## References
