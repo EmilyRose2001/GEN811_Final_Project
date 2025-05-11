@@ -39,4 +39,5 @@ This Python script, created by Joseph Seivgny, is designed to filter the assembl
 ## Results
 fastqc quality before and after trimming
 blobtools identification
+
 ## References
