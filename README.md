@@ -60,6 +60,7 @@ Another blobtools plot showing the greatest taxonomic hits for the other unident
 7. Li, H., Handsaker, B., Wysoker, A., Fennell, T., Ruan, J., Homer, N., Marth, G., Abecasis, G., Durbin, R., & 1000 Genome Project Data Processing Subgroup. (2009). The Sequence alignment/map (SAM) format and SAMtools. Bioinformatics, 25(6). https://doi.org/10.1093/bioinformatics/btp352
 8. Manni, Mose, Berkeley, M.R., Seppey, M., Simao, F.A., & Zdobnov, E.M. (2021). BUSCO Update: Novel and Streamlines Workflows along with Broader and Deeper Phylogenetic Coverage for Scoring of Eukaryotic, Prokaryotic, and Viral Genomes. Molecular Biology and Evolution, 38(10), 4647-4654. https://doi.org/10.1093/molbev/msab199
 9. Mikheenko, A., Saveliev, V., Hirsch, P., & Gurevich, A. (2023). WebQUAST: online evaluation of genome assemblies. Nucleic Acids Research. https://doi.org/10.1093/nar/gkad406
-10. Prjibelski, A., Antipov, D., Meleshko, D., Lapidus, A., & Korobeynikov. (2020). Using SPAdes De Novo Assembler. Current Protocols in Bioinformatics, 70(1). https://doi.org/10.1002/cpbi.102
-11. Seemann, T. (2014). Prokka: rapid prokaryotic genome annotation. Bioinformatics, 30(14), 2068-2069. https://doi.org/10.1093/bioinformatics/btu153
-12. Sevigny, J.L. (2018). MDIBL-T3-WGS-Tutorial. GitHub. https://github.com/Joseph7e/MDIBL-T3-WGS-Tutorial?tab=readme-ov-file
+10. Pollard, T., Marshall, J., Balweirz, P., Young, G., Seifert, D., & Mollier, E. (2023). bedtools version 2.31.1. GitHub. https://github.com/arq5x/bedtools2/releases
+11. Prjibelski, A., Antipov, D., Meleshko, D., Lapidus, A., & Korobeynikov. (2020). Using SPAdes De Novo Assembler. Current Protocols in Bioinformatics, 70(1). https://doi.org/10.1002/cpbi.102
+12. Seemann, T. (2014). Prokka: rapid prokaryotic genome annotation. Bioinformatics, 30(14), 2068-2069. https://doi.org/10.1093/bioinformatics/btu153
+13. Sevigny, J.L. (2018). MDIBL-T3-WGS-Tutorial. GitHub. https://github.com/Joseph7e/MDIBL-T3-WGS-Tutorial?tab=readme-ov-file
