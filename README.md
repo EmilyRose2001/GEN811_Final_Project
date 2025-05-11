@@ -2,7 +2,9 @@
 
 ### By: Emily Persson
 ## Background
-The data used in this project are forward and reverse sequences from two different unidentified bacterial organisms. In total, two forward and two reverse sequences were used. The project aims to identify the two organisms by assembling their genomes from these forward and reverse sequences. 
+The data used in this project are forward and reverse sequences from two different unidentified bacterial organisms. In total, two forward and two reverse sequences were used. The project aims to identify the two organisms by assembling their genomes from these forward and reverse sequences.
+## Code
+Two scripts need to be run to assemble the bacterial genome(s) of one or more bacterial samples. The first is called 'bacteria_genome_assembly.sh' and performs the steps described in the 'Methods' section until the genome visualization step with BlobTools. This script takes a directory full of sequence FASTQ files that are to be assembled as an argument. The second script, 'bacteria_genome_assembly_2.sh', calls BlobTools and finishes the genome assembly by filtering it.
 ## Methods
 The sequences from the two unidentified bacterial organisms were provided by Kaleb Ducharme, a TA at the University of New Hampshire. They were sequenced using Sanger sequencing and Illumina. Using the university's supercomputer RON and multiple tools, the genomes were assembled.
 ### Tools
@@ -50,15 +52,15 @@ A blobtools plot depicting the greatest taxonomic hits for the unidentified samp
 #### Figure 4
 Another blobtools plot showing the greatest taxonomic hits for the other unidentified sample, 03_S58_L001. The taxonomy of this sample is Escherichia. The smaller colorful dots further down the plot represent other taxonomic hits that we want to remove by filtering the genome.
 ## References
-1. Sevigny, J.L. (2018). MDIBL-T3-WGS-Tutorial. https://github.com/Joseph7e/MDIBL-T3-WGS-Tutorial?tab=readme-ov-file
-2. Andrews, S. FastQC. Babraham Bioinformatics. https://www.bioinformatics.babraham.ac.uk/projects/fastqc/
+1. Andrews, S. FastQC. Babraham Bioinformatics. https://www.bioinformatics.babraham.ac.uk/projects/fastqc/
+2. BLAST Command Line Applications User Manual. (2008). National Center for Biotechnology Information (US). https://www.ncbi.nlm.nih.gov/books/NBK279690
 3. Bolger, A.M., Lose, M., & Usadel, B. (2014). Trimmomatic: A flexible trimmer for Illumina Sequence Data. Bioinformatics. https://doi.org/10.1093/bioinformatics/btu170
-4. Prjibelski, A., Antipov, D., Meleshko, D., Lapidus, A., & Korobeynikov. (2020). Using SPAdes De Novo Assembler. Current Protocols in Bioinformatics, 70(1). https://doi.org/10.1002/cpbi.102
-5. Mikheenko, A., Saveliev, V., Hirsch, P., & Gurevich, A. (2023). WebQUAST: online evaluation of genome assemblies. Nucleic Acids Research. https://doi.org/10.1093/nar/gkad406
-6. Manni, Mose, Berkeley, M.R., Seppey, M., Simao, F.A., & Zdobnov, E.M. (2021). BUSCO Update: Novel and Streamlines Workflows along with Broader and Deeper Phylogenetic Coverage for Scoring of Eukaryotic, Prokaryotic, and Viral Genomes. Molecular Biology and Evolution, 38(10), 4647-4654. https://doi.org/10.1093/molbev/msab199
-7.  Seemann, T. (2014). Prokka: rapid prokaryotic genome annotation. Bioinformatics, 30(14), 2068-2069. https://doi.org/10.1093/bioinformatics/btu153
-8.  BLAST Command Line Applications User Manual. (2008). National Center for Biotechnology Information (US). https://www.ncbi.nlm.nih.gov/books/NBK279690
-9.  Li, H. (2012). Exploring single-sample SNP and INDEL calling with whole-genome de novo assembly. Bioinformatics, 28, 1838-1844.
-10.  Li, H., Handsaker, B., Wysoker A., Fennell, T., Ruan, J., Homer, N., Marth, G., Abecasis, G., Durbin, R., & 1000 Genome Project Data Processing Subgroup. (2009). The Sequence alignment/map (SAM) format and SAMtools. Bioinformatics, 25(6). https://doi.org/10.1093/bioinformatics/btp352
-11.   Laetsch, D.R., Koutsovoulos, G., Booth, T., Stajich, J., & Kumar, S. (2017). DRL/blobtools: BlobTools v1.0.1. Zenodo. https://zenodo.org/records/845347
-12.   Laetsch, D.R. & Blaxter, M.L. (2017). BlobTools; Interrogation of genome assemblies. F1000 Research. https://f1000research.com/articles/6-1287/v1
+4. Laetsch, D.R. & Blaxter, M.L. (2017). BlobTools: Interrogation of genome assemblies. F1000 Research. https://f1000research.com/articles/6-1287/v1
+5. Laetsch, D.R., Koutsovoulos, G., Booth, T., Stajich, J., & Kumar, S. (2017). DRL/blobtools: BlobTools v1.0.1. Zenodo. https://zenodo.org/records/845347
+6. Li, H. (2012). Exploring single-sample SNP and INDEL calling with whole-genome de novo assembly. Bioinformatics, 28, 1838-1844.
+7. Li, H., Handsaker, B., Wysoker, A., Fennell, T., Ruan, J., Homer, N., Marth, G., Abecasis, G., Durbin, R., & 1000 Genome Project Data Processing Subgroup. (2009). The Sequence alignment/map (SAM) format and SAMtools. Bioinformatics, 25(6). https://doi.org/10.1093/bioinformatics/btp352
+8. Manni, Mose, Berkeley, M.R., Seppey, M., Simao, F.A., & Zdobnov, E.M. (2021). BUSCO Update: Novel and Streamlines Workflows along with Broader and Deeper Phylogenetic Coverage for Scoring of Eukaryotic, Prokaryotic, and Viral Genomes. Molecular Biology and Evolution, 38(10), 4647-4654. https://doi.org/10.1093/molbev/msab199
+9. Mikheenko, A., Saveliev, V., Hirsch, P., & Gurevich, A. (2023). WebQUAST: online evaluation of genome assemblies. Nucleic Acids Research. https://doi.org/10.1093/nar/gkad406
+10. Prjibelski, A., Antipov, D., Meleshko, D., Lapidus, A., & Korobeynikov. (2020). Using SPAdes De Novo Assembler. Current Protocols in Bioinformatics, 70(1). https://doi.org/10.1002/cpbi.102
+11. Seemann, T. (2014). Prokka: rapid prokaryotic genome annotation. Bioinformatics, 30(14), 2068-2069. https://doi.org/10.1093/bioinformatics/btu153
+12. Sevigny, J.L. (2018). MDIBL-T3-WGS-Tutorial. GitHub. https://github.com/Joseph7e/MDIBL-T3-WGS-Tutorial?tab=readme-ov-file
