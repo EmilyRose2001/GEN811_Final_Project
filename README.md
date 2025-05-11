@@ -38,16 +38,16 @@ Blobtools is a genome assembly visualization tool that provides insights into wh
 #### filter_contigs_by_list.py
 This Python script is designed to filter the assembly based on a list of contigs chosen to remain in the assembly. The input is the 'contigs.fasta' file, the TXT file of the list of contigs being kept, and a desired output name for a FASTA file. The output is the filtered genome assembly.
 ## Results
-![02_fastqc](/images/sample_02_fastqc.png)
+![02_fastqc](sample_02_fastqc.png)
 #### Figure 1
 This figure shows three of the FastqC output plots for the 02_S65_L001_R1_001 sample. Both the FastQC results for the raw sequence and trimmed sequence are included. The FastQC for the raw sequence takes a FASTQ file of the raw sequence as its input, and the FastQC for the trimmed sequence takes a FASTQ file of the trimmed sequence as its input. This figure only depicts the FastQC results of the forward read of the sample, however, the same test is performed for the reverse reads of the raw sequences and the reverse, unpaired forward, and unpaired reverse reads of the trimmed sequences. For the adapter content plot, the adapter content present in the raw sequence is eliminated in the trimmed plot, which increases the quality. The GC content for the raw sample is shown to be higher than the normal sequence GC content distribution. Overall, there is no meaningful change in the GC content of the trimmed sequence. For the sequence length distribution plot, the raw sequence shows a better distribution than the trimmed sequence. The results for the reverse sequence, both raw and trimmed, are consistent with these findings.
-![03_fastqc](/images/sample_03_fastqc.png)
+![03_fastqc](sample_03_fastqc.png)
 #### Figure 2
 This figure shows three of the FastQC output plots for the 03_S58_L001_R1_001 sample. Like Figure 1, the plots shown are adapter content, sequence length distribution, and GC content for both the raw sequence and the trimmed sequence. The findings of these three plots are also very similar to sample 02_S65_L001_R1_001. The only difference is that the highest sequence length and GC content are lower than the 02_S65_L001_R1_001 sample.
-![02_sample_blob](/images/blob_out_02_S65_L001.blobDB.json.bestsum.genus.p8.span.100.blobplot.bam0.png)
+![02_sample_blob](blob_out_02_S65_L001.blobDB.json.bestsum.genus.p8.span.100.blobplot.bam0.png)
 #### Figure 3
 A BlobTools plot depicting the greatest taxonomic hits for the unidentified sample 02_S65_L001. As seen by the large blue dot, the taxonomy with the highest hit is Clostridioides. The smaller blue dots further down the plot represent contigs that would be beneficial to filter out. This plot was created using BlobTools with the output JSON mentioned in the methods section for 'BlobTools'.
-![03_sample_blob](/images/blob_out_03_S58_L001.blobDB.json.bestsum.genus.p8.span.100.blobplot.bam0.png)
+![03_sample_blob](blob_out_03_S58_L001.blobDB.json.bestsum.genus.p8.span.100.blobplot.bam0.png)
 #### Figure 4
 Another BlobTools plot showing the greatest taxonomic hits for the other unidentified sample, 03_S58_L001. The taxonomy with the highest hit is Escherichia. The smaller multi-colored dots further down the plot represent other taxonomic hits that would be beneficial to remove by filtering the genome.
 ## References
