@@ -37,7 +37,7 @@ Blobtools is a genome assembly visualization tool that provides insights into wh
 #### filter_contigs_by_list.py
 This Python script, created by Joseph Seivgny, is designed to filter the assembly based on a list of contigs that have been chosen to remain in the assembly. The input is the 'contigs.fasta' file, the TXT file of the list of contigs, and a desired output name for a FASTA file. The output is the filtered genome assembly.
 ## Results
-![02_fastqc]
+![02_fastqc](sample 02 fastqc.png)
 #### Figure 1
 ![03_fastqc]
 #### Figure 2
