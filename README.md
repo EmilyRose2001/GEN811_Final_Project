@@ -40,5 +40,9 @@ This Python script, created by Joseph Seivgny, is designed to filter the assembl
 fastqc quality before and after trimming
 blobtools identification
 ![02_sample_blob](blob_out_02_S65_L001.blobDB.json.bestsum.genus.p8.span.100.blobplot.bam0.png)
+#### Figure 1
+A blobtools plot depicting the greatest taxonomic hits for the unidentified sample 02_S65_L001. As seen by the centralized blue dot, the taxonomy with the highest hit is Clostridioides. This plot was created using Blobtools with the output JSON mentioned in the methods section for Blobtools.
 ![03_sample_blob](blob_out_03_S58_L001.blobDB.json.bestsum.genus.p8.span.100.blobplot.bam0.png)
+#### Figure 2
+Another blobtools plot showing the greatest taxonomic hits for the other unidentified sample, 03_S58_L001. The taxonomy of this sample is Escherichia.
 ## References
