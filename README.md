@@ -2,7 +2,7 @@
 ### By: Emily Persson
 ## Background
 The data used in this project are forward and reverse sequences (FASTQ files) from two different unidentified bacterial organisms. The project aims to identify these two organisms by assembling their genomes from the forward and reverse sequences.
-## Code
+## Pipeline Code
 Two scripts are run to assemble the bacterial genome(s) of one or more bacterial samples. The first is called 'bacteria_genome_assembly.sh' and performs the steps described in the 'Methods' section until the genome visualization step with BlobTools. This script takes a directory full of sequence FASTQ files (forward and reverse sequences) intended to be assembled as an argument. The second script, 'bacteria_genome_assembly_2.sh', calls BlobTools and finishes the genome assembly by filtering it.
 ## Methods
 The sequences from the two unidentified bacterial samples were sequenced using Illumina sequencing. The University of New Hampshire's teaching server, RON, and multiple bioinformatics tools were used to assemble the genomes of the mystery bacterial samples.
