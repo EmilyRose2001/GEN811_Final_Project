@@ -7,7 +7,7 @@ The data used in this project are forward and reverse sequences from two differe
 The sequences from the two unidentified bacterial organisms were provided by Kaleb Ducharme, a TA at the University of New Hampshire. They were sequenced using Sanger sequencing and Illumina. Using the university's supercomputer RON and multiple tools, the genomes were assembled.
 ### Tools
 #### FastQC
-The purpose of using FastQC was to take a look at the read quality of the sequences. FastQC outputs an HTML and zip file for each sequence it is given. There are multiple read quality components in a FastQC HTML file; basic statistics, per base sequence quality, per tile sequence quality, per sequence quality scores, per base sequence content, per sequence GC content, per base N content, sequence length distribution, sequence duplication levels, overrepresented sequences, and adapter content. This HTML file was downloaded from RON to examine the FastQC findings.
+The purpose of using FastQC was to take a look at the read quality of the sequences. FastQC outputs an HTML and a zip file for each given sequence. There are multiple read quality components in a FastQC HTML file; basic statistics, per base sequence quality, per tile sequence quality, per sequence quality scores, per base sequence content, per sequence GC content, per base N content, sequence length distribution, sequence duplication levels, overrepresented sequences, and adapter content. This HTML file was downloaded from RON to examine the FastQC findings.
 #### Trimmomatic
 Trimmomatic is a tool that removes low-quality reads and adapter content from the sequence. A wrapper script for trimmomatic, created by Joseph Sevigny, was used in this project. The script takes two arguments: the forward read and the reverse read. The output is a directory called 'trimmed-reads' containing trimmed forward, reverse, unpaired forward, and unpaired reverse gzipped reads. FastQC is then performed on the trimmed reads to compare the quality results to the raw reads.
 #### SPAdes
@@ -39,10 +39,11 @@ This Python script, created by Joseph Seivgny, is designed to filter the assembl
 ## Results
 ![02_fastqc](sample_02_fastqc.png)
 #### Figure 1
-Several plots from a FastQC file.
+This figure shows three of the FastqC output plots for the 02_S65_L001 sample. Both the FastQC results for the raw sequence and trimmed sequence are included. The FastQC for the raw sequence takes a FASTQ file of the raw sequence as its input, and the FastQC for the trimmed sequence takes a FASTQ file of the trimmed sequence as its input. For the adapter content plot, the adapter content present in the raw sequence is eliminated in the trimmed plot. The GC content for the sample is shown to be higher than the normal sequence GC content distribution. This is made slightly better by trimming the sequence, however, it is still high. For the sequence length distribution plot, the raw sequence shows a better distribution than the trimmed.
 ![03_fastqc](sample_03_fastqc.png)
 #### Figure 2
 ![02_sample_blob](blob_out_02_S65_L001.blobDB.json.bestsum.genus.p8.span.100.blobplot.bam0.png)
+This figure shows three of the FastQC output plots for the 03_S58_L001 sample. Like Figure 1, the plots shown are adapter content, sequence length distribution, and GC content for both the raw sequence and the trimmed sequence. The findings of these three plots are also very similar to sample 02_S65_L001. The only difference is that 
 #### Figure 3
 A blobtools plot depicting the greatest taxonomic hits for the unidentified sample 02_S65_L001. As seen by the centralized blue dot, the taxonomy with the highest hit is Clostridioides. The smaller blue dots further down the plot represent contigs that we want to filter out. This plot was created using Blobtools with the output JSON mentioned in the methods section for Blobtools.
 ![03_sample_blob](blob_out_03_S58_L001.blobDB.json.bestsum.genus.p8.span.100.blobplot.bam0.png)
